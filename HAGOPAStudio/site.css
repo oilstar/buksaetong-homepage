@@ -314,6 +314,10 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -328,6 +332,80 @@ h3 {
 
 .accent-commerce {
   border-top: 5px solid var(--commerce);
+}
+
+.commerce-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 22px;
+  align-items: stretch;
+  margin-bottom: 22px;
+}
+
+.market-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.market-step,
+.commerce-summary {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  padding: 22px;
+}
+
+.market-step {
+  display: grid;
+  gap: 8px;
+  border-left: 6px solid var(--commerce);
+}
+
+.market-step.next {
+  border-left-color: var(--gold);
+}
+
+.market-step span,
+.tag-list span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.market-step strong {
+  color: var(--ink);
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.market-step p,
+.commerce-summary p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.commerce-summary {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-list span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--soft);
+  padding: 5px 10px;
+}
+
+.commerce-cards {
+  margin-top: 0;
 }
 
 .division-feature {
@@ -591,8 +669,10 @@ h3 {
 
   .grid,
   .grid.two,
+  .grid.three,
   .product,
   .division-feature,
+  .commerce-layout,
   .game-card {
     grid-template-columns: 1fr;
   }
