@@ -6,9 +6,12 @@ Static website for `buksaetong.com`.
 
 - `/` - official company homepage with e-commerce reselling and HAGOPA Studio branches
 - `/HAGOPAStudio/` - game division homepage and expandable game catalog
+- `/HAGOPAStudio/mooncrop/` - Mooncrop product page
+- `/HAGOPAStudio/mooncrop/privacy.html` - Mooncrop privacy policy
+- `/HAGOPAStudio/mooncrop/support.html` - Mooncrop support page
 - `/HAGOPAStudio/sand-caravan/` - Sand Caravan product page
-- `/HAGOPAStudio/sand-caravan/privacy.html` - privacy policy
-- `/HAGOPAStudio/sand-caravan/support.html` - support page
+- `/HAGOPAStudio/sand-caravan/privacy.html` - Sand Caravan privacy policy
+- `/HAGOPAStudio/sand-caravan/support.html` - Sand Caravan support page
 
 ## Game Catalog
 
@@ -19,8 +22,10 @@ privacy, and support pages, so the game section can grow without rewriting the s
 
 - Official company website: `https://buksaetong.com/`
 - HAGOPA Studio website: `https://buksaetong.com/HAGOPAStudio/`
-- Privacy Policy: `https://buksaetong.com/HAGOPAStudio/sand-caravan/privacy.html`
-- Support: `https://buksaetong.com/HAGOPAStudio/sand-caravan/support.html`
+- Mooncrop Privacy Policy: `https://buksaetong.com/HAGOPAStudio/mooncrop/privacy.html`
+- Mooncrop Support: `https://buksaetong.com/HAGOPAStudio/mooncrop/support.html`
+- Sand Caravan Privacy Policy: `https://buksaetong.com/HAGOPAStudio/sand-caravan/privacy.html`
+- Sand Caravan Support: `https://buksaetong.com/HAGOPAStudio/sand-caravan/support.html`
 
 ## Deployment Notes
 

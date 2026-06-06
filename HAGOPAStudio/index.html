@@ -17,7 +17,7 @@
         <div class="nav-links">
           <a href="../">Company</a>
           <a href="#games">Games</a>
-          <a href="./sand-caravan/support.html">Support</a>
+          <a href="mailto:cs-hagopa@buksaetong.com">Support</a>
         </div>
       </nav>
     </header>
@@ -29,11 +29,11 @@
           <h1>HAGOPA Studio</h1>
           <p class="hero-copy">
             HAGOPA Studio is the game studio branch of Buksaetong. It develops and supports mobile games
-            while Buksaetong operates as the company behind the studio.
+            including Mooncrop and Sand Caravan while Buksaetong operates as the company behind the studio.
           </p>
           <div class="actions">
             <a class="button" href="#games">View Games</a>
-            <a class="button secondary" href="./sand-caravan/support.html">Contact Support</a>
+            <a class="button secondary" href="mailto:cs-hagopa@buksaetong.com">Contact Support</a>
           </div>
         </div>
       </section>
@@ -67,18 +67,41 @@
         <div class="section-header">
           <p class="eyebrow dark">Catalog</p>
           <h2>Games</h2>
-          <p>Each game card is rendered from a shared game catalog, so this section grows with new titles.</p>
+          <p>
+            Mooncrop and Sand Caravan are available across Google Play and the App Store. New titles can be
+            added through the shared game catalog.
+          </p>
         </div>
         <div class="game-list" id="gameList">
           <article class="game-card">
+            <div class="game-mark mooncrop" aria-hidden="true">MC</div>
+            <div>
+              <p class="game-meta">iOS and Android · Mobile Game · Available</p>
+              <h3>Mooncrop</h3>
+              <p>A HAGOPA Studio mobile game available for players on Google Play and the App Store.</p>
+              <div class="store-list" aria-label="Mooncrop store availability">
+                <span>Google Play</span>
+                <span>App Store</span>
+              </div>
+              <div class="card-actions">
+                <a class="text-link" href="./mooncrop/">Game Page</a>
+                <a class="text-link muted" href="./mooncrop/privacy.html">Privacy</a>
+              </div>
+            </div>
+          </article>
+          <article class="game-card">
             <img src="./assets/sand-caravan-icon.png" alt="Sand Caravan app icon" />
             <div>
-              <p class="game-meta">Mobile · Idle RPG · In preparation</p>
+              <p class="game-meta">iOS and Android · Idle RPG · Available</p>
               <h3>Sand Caravan</h3>
               <p>
                 A mobile idle RPG about a caravan crossing desert ruins, gathering relics, hiring allies,
                 and surviving deeper expeditions.
               </p>
+              <div class="store-list" aria-label="Sand Caravan store availability">
+                <span>Google Play</span>
+                <span>App Store</span>
+              </div>
               <div class="card-actions">
                 <a class="text-link" href="./sand-caravan/">Game Page</a>
                 <a class="text-link muted" href="./sand-caravan/privacy.html">Privacy</a>
@@ -100,7 +123,7 @@
         <div class="footer-links">
           <a href="../">Company</a>
           <a href="#games">Games</a>
-          <a href="./sand-caravan/support.html">Support</a>
+          <a href="mailto:cs-hagopa@buksaetong.com">Support</a>
         </div>
       </div>
     </footer>
@@ -112,11 +135,24 @@
           .map(
             (game) => `
               <article class="game-card">
-                <img src="${game.icon}" alt="${game.title} app icon" />
+                ${
+                  game.icon
+                    ? `<img src="${game.icon}" alt="${game.title} app icon" />`
+                    : `<div class="game-mark ${game.theme || ""}" aria-hidden="true">${game.initials || game.title.slice(0, 2)}</div>`
+                }
                 <div>
                   <p class="game-meta">${game.platform} · ${game.genre} · ${game.status}</p>
                   <h3>${game.title}</h3>
                   <p>${game.description}</p>
+                  <div class="store-list" aria-label="${game.title} store availability">
+                    ${(game.stores || [])
+                      .map((store) =>
+                        store.url
+                          ? `<a href="${store.url}" target="_blank" rel="noopener">${store.name}</a>`
+                          : `<span>${store.name}</span>`
+                      )
+                      .join("")}
+                  </div>
                   <div class="card-actions">
                     <a class="text-link" href="${game.url}">Game Page</a>
                     <a class="text-link muted" href="${game.privacyUrl}">Privacy</a>
