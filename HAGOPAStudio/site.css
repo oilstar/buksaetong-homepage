@@ -1,0 +1,361 @@
+:root {
+  color-scheme: light;
+  --ink: #202124;
+  --muted: #5f6368;
+  --line: #dadce0;
+  --paper: #fffdf8;
+  --soft: #f5f7f8;
+  --brand: #146c5f;
+  --brand-dark: #0d3f39;
+  --gold: #b7791f;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--brand);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(32, 33, 36, 0.12);
+  background: rgba(255, 253, 248, 0.93);
+  backdrop-filter: blur(14px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 14px 22px;
+}
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  color: var(--ink);
+  font-weight: 800;
+  line-height: 1.05;
+  text-decoration: none;
+}
+
+.brand span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-links a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  min-height: 68vh;
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--brand-dark);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(90deg, rgba(8, 32, 29, 0.92), rgba(8, 32, 29, 0.66) 48%, rgba(8, 32, 29, 0.18)),
+    url("./assets/sand-caravan-hero.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  z-index: -1;
+  height: 160px;
+  background: linear-gradient(0deg, var(--paper), rgba(255, 253, 248, 0));
+}
+
+.hero-inner {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 88px 22px 112px;
+  color: var(--white);
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  color: #d4f0e6;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+h1 {
+  max-width: 780px;
+  font-size: clamp(42px, 8vw, 84px);
+}
+
+h2 {
+  font-size: clamp(28px, 4vw, 44px);
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.hero-copy {
+  max-width: 640px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 18px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--brand-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.button.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+}
+
+.section {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 76px 22px;
+}
+
+.section.tight {
+  padding-top: 42px;
+}
+
+.section-header {
+  display: grid;
+  gap: 14px;
+  max-width: 720px;
+  margin-bottom: 30px;
+}
+
+.section-header p,
+.lead {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  padding: 22px;
+}
+
+.card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 28px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 28px 0;
+}
+
+.product-icon {
+  width: 180px;
+  aspect-ratio: 1;
+  border-radius: 28px;
+  box-shadow: 0 16px 42px rgba(32, 33, 36, 0.18);
+}
+
+.details {
+  display: grid;
+  gap: 14px;
+}
+
+.details dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px 16px;
+  margin: 0;
+}
+
+.details dt {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.details dd {
+  margin: 0;
+}
+
+.legal {
+  max-width: 860px;
+}
+
+.legal h1 {
+  color: var(--ink);
+  font-size: clamp(34px, 6vw, 58px);
+}
+
+.legal h2 {
+  margin-top: 42px;
+  font-size: 26px;
+}
+
+.legal p,
+.legal li {
+  color: var(--muted);
+}
+
+.legal ul {
+  padding-left: 22px;
+}
+
+.notice {
+  border-left: 4px solid var(--gold);
+  background: #fff7e8;
+  padding: 16px 18px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 26px 22px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    gap: 12px 16px;
+  }
+
+  .hero {
+    min-height: 72vh;
+  }
+
+  .hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(8, 32, 29, 0.9), rgba(8, 32, 29, 0.74)),
+      url("./assets/sand-caravan-hero.png");
+  }
+
+  .hero-inner {
+    padding-top: 70px;
+    padding-bottom: 88px;
+  }
+
+  .grid,
+  .product {
+    grid-template-columns: 1fr;
+  }
+
+  .product-icon {
+    width: 128px;
+  }
+
+  .details dl {
+    grid-template-columns: 1fr;
+    gap: 2px 0;
+  }
+}
