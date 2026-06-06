@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Buksaetong</title>
+    <title>HAGOPA Studio | Buksaetong</title>
     <meta
       name="description"
-      content="Buksaetong is an independent mobile game publisher and developer supporting Sand Caravan."
+      content="HAGOPA Studio is the mobile game studio branch of Buksaetong."
     />
     <link rel="stylesheet" href="./site.css" />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="./">Buksaetong <span>북새통</span></a>
+        <a class="brand" href="../">HAGOPA Studio <span>by Buksaetong</span></a>
         <div class="nav-links">
-          <a href="./sand-caravan/">Sand Caravan</a>
-          <a href="./sand-caravan/privacy.html">Privacy</a>
+          <a href="../">Company</a>
+          <a href="#games">Games</a>
           <a href="./sand-caravan/support.html">Support</a>
         </div>
       </nav>
@@ -25,14 +25,14 @@
     <main>
       <section class="hero">
         <div class="hero-inner">
-          <p class="eyebrow">Independent mobile games</p>
-          <h1>Buksaetong</h1>
+          <p class="eyebrow">Game Division</p>
+          <h1>HAGOPA Studio</h1>
           <p class="hero-copy">
-            Buksaetong publishes and supports mobile games for players who enjoy compact, characterful
-            adventures. Our current release project is Sand Caravan, a desert idle RPG for mobile devices.
+            HAGOPA Studio is the game studio branch of Buksaetong. It develops and supports mobile games
+            while Buksaetong operates as the company behind the studio.
           </p>
           <div class="actions">
-            <a class="button" href="./sand-caravan/">View Sand Caravan</a>
+            <a class="button" href="#games">View Games</a>
             <a class="button secondary" href="./sand-caravan/support.html">Contact Support</a>
           </div>
         </div>
@@ -40,51 +40,57 @@
 
       <section class="section">
         <div class="section-header">
-          <h2>Company</h2>
+          <p class="eyebrow dark">Studio</p>
+          <h2>Game Business</h2>
           <p>
-            Buksaetong is the official web presence for our game publishing and support activity.
-            This website provides product information, player support, and privacy information for our apps.
+            Buksaetong branches into e-commerce reselling and HAGOPA Studio. This section is a direct entry
+            point for players, partners, and app review pages related to HAGOPA Studio games.
           </p>
         </div>
         <div class="grid">
           <article class="card">
-            <h3>Games</h3>
-            <p>We build and publish small-scale mobile games with clear systems and readable play.</p>
+            <h3>Original Games</h3>
+            <p>Create mobile games under the HAGOPA Studio name while remaining part of Buksaetong.</p>
           </article>
           <article class="card">
             <h3>Player Support</h3>
             <p>Players can contact us for app issues, purchase questions, and privacy requests.</p>
           </article>
           <article class="card">
-            <h3>Responsible Release</h3>
-            <p>Our app pages include support routes and privacy information before public distribution.</p>
+            <h3>Expandable Catalog</h3>
+            <p>New games are added through structured game data and their own detail pages.</p>
           </article>
         </div>
       </section>
 
-      <section class="section tight">
+      <section class="section tight" id="games">
         <div class="section-header">
-          <h2>Current Project</h2>
-          <p>Sand Caravan is in preparation for mobile release.</p>
+          <p class="eyebrow dark">Catalog</p>
+          <h2>Games</h2>
+          <p>Each game card is rendered from a shared game catalog, so this section grows with new titles.</p>
         </div>
-        <div class="product">
-          <img class="product-icon" src="./assets/sand-caravan-icon.png" alt="Sand Caravan app icon" />
-          <div class="details">
-            <h3>Sand Caravan</h3>
-            <p class="lead">
-              A mobile idle RPG about a caravan crossing desert ruins, gathering relics, hiring allies,
-              and surviving deeper expeditions.
-            </p>
-            <dl>
-              <dt>Developer</dt>
-              <dd>Buksaetong</dd>
-              <dt>Support</dt>
-              <dd><a href="mailto:cs-hagopa@buksaetong.com">cs-hagopa@buksaetong.com</a></dd>
-              <dt>Privacy</dt>
-              <dd><a href="./sand-caravan/privacy.html">Sand Caravan Privacy Policy</a></dd>
-            </dl>
+        <div class="game-list" id="gameList">
+          <article class="game-card">
+            <img src="./assets/sand-caravan-icon.png" alt="Sand Caravan app icon" />
+            <div>
+              <p class="game-meta">Mobile · Idle RPG · In preparation</p>
+              <h3>Sand Caravan</h3>
+              <p>
+                A mobile idle RPG about a caravan crossing desert ruins, gathering relics, hiring allies,
+                and surviving deeper expeditions.
+              </p>
+              <div class="card-actions">
+                <a class="text-link" href="./sand-caravan/">Game Page</a>
+                <a class="text-link muted" href="./sand-caravan/privacy.html">Privacy</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <noscript>
+          <div class="notice">
+            Game catalog data is available in <code>HAGOPAStudio/games.js</code>.
           </div>
-        </div>
+        </noscript>
       </section>
     </main>
 
@@ -92,10 +98,35 @@
       <div class="footer-inner">
         <span>© 2026 Buksaetong. All rights reserved.</span>
         <div class="footer-links">
-          <a href="./sand-caravan/privacy.html">Privacy Policy</a>
+          <a href="../">Company</a>
+          <a href="#games">Games</a>
           <a href="./sand-caravan/support.html">Support</a>
         </div>
       </div>
     </footer>
+    <script src="./games.js"></script>
+    <script>
+      const list = document.querySelector("#gameList");
+      if (list && Array.isArray(window.hagopaGames)) {
+        list.innerHTML = window.hagopaGames
+          .map(
+            (game) => `
+              <article class="game-card">
+                <img src="${game.icon}" alt="${game.title} app icon" />
+                <div>
+                  <p class="game-meta">${game.platform} · ${game.genre} · ${game.status}</p>
+                  <h3>${game.title}</h3>
+                  <p>${game.description}</p>
+                  <div class="card-actions">
+                    <a class="text-link" href="${game.url}">Game Page</a>
+                    <a class="text-link muted" href="${game.privacyUrl}">Privacy</a>
+                  </div>
+                </div>
+              </article>
+            `
+          )
+          .join("");
+      }
+    </script>
   </body>
 </html>
