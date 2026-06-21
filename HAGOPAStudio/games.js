@@ -46,4 +46,27 @@ window.hagopaGames = [
     description:
       "A mobile idle RPG about a caravan crossing desert ruins, gathering relics, hiring allies, and surviving deeper expeditions.",
   },
+  {
+    slug: "star-swarm-idle",
+    title: "Star Swarm Idle",
+    genre: "Idle Shooter",
+    platform: "iOS and Android",
+    status: "Coming Soon",
+    icon: "./assets/star-swarm-idle-icon.png",
+    url: "./star-swarm-idle/",
+    supportUrl: "./star-swarm-idle/support.html",
+    privacyUrl: "./star-swarm-idle/privacy.html",
+    stores: [
+      {
+        name: "Google Play",
+        url: "",
+      },
+      {
+        name: "App Store",
+        url: "",
+      },
+    ],
+    description:
+      "A mobile idle drone-swarm shooter: build an autonomous fleet, push through vertical bullet routes, and break giant bosses with smart formation and research choices.",
+  },
 ];
