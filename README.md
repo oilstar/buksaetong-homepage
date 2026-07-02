@@ -1,4 +1,4 @@
-# Buksaetong Company Site
+# BUKSAETONG Company Site
 
 Static website for `buksaetong.com`.
 
@@ -6,6 +6,9 @@ Static website for `buksaetong.com`.
 
 - `/` - official company homepage with e-commerce reselling and HAGOPA Studio branches
 - `/HAGOPAStudio/` - game division homepage and expandable game catalog
+- `/HAGOPAStudio/guilds-requiem/` - Guild's Requiem product page (PC / Steam)
+- `/HAGOPAStudio/guilds-requiem/privacy.html` - Guild's Requiem privacy policy
+- `/HAGOPAStudio/guilds-requiem/support.html` - Guild's Requiem support page
 - `/HAGOPAStudio/mooncrop/` - Mooncrop product page
 - `/HAGOPAStudio/mooncrop/privacy.html` - Mooncrop privacy policy
 - `/HAGOPAStudio/mooncrop/support.html` - Mooncrop support page
@@ -22,6 +25,9 @@ privacy, and support pages, so the game section can grow without rewriting the s
 
 - Official company website: `https://buksaetong.com/`
 - HAGOPA Studio website: `https://buksaetong.com/HAGOPAStudio/`
+- Guild's Requiem Product Page: `https://buksaetong.com/HAGOPAStudio/guilds-requiem/`
+- Guild's Requiem Privacy Policy: `https://buksaetong.com/HAGOPAStudio/guilds-requiem/privacy.html`
+- Guild's Requiem Support: `https://buksaetong.com/HAGOPAStudio/guilds-requiem/support.html`
 - Mooncrop Privacy Policy: `https://buksaetong.com/HAGOPAStudio/mooncrop/privacy.html`
 - Mooncrop Support: `https://buksaetong.com/HAGOPAStudio/mooncrop/support.html`
 - Sand Caravan Privacy Policy: `https://buksaetong.com/HAGOPAStudio/sand-caravan/privacy.html`

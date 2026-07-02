@@ -1,5 +1,24 @@
 window.hagopaGames = [
   {
+    slug: "guilds-requiem",
+    title: "Guild's Requiem",
+    genre: "Dark Fantasy Deckbuilding Roguelike",
+    platform: "Windows, macOS, and Linux",
+    status: "Coming Soon to Steam",
+    icon: "./assets/guilds-requiem-icon.png",
+    url: "./guilds-requiem/",
+    supportUrl: "./guilds-requiem/support.html",
+    privacyUrl: "./guilds-requiem/privacy.html",
+    stores: [
+      {
+        name: "Steam",
+        url: "",
+      },
+    ],
+    description:
+      "A dark fantasy deckbuilding roguelike. Run a guild at the edge of a dying world, send your party into the abyss, and win tactical card battles where every fallen light brings the end closer. Coming Soon to Steam.",
+  },
+  {
     slug: "mooncrop",
     title: "Mooncrop",
     genre: "Mobile Game",
