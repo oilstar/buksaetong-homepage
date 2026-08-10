@@ -88,4 +88,23 @@ window.hagopaGames = [
     description:
       "A mobile idle drone-swarm shooter: build an autonomous fleet, push through vertical bullet routes, and break giant bosses with smart formation and research choices.",
   },
+  {
+    slug: "tiny-keeps",
+    title: "Tiny Keeps",
+    genre: "Survivor-like Roguelite",
+    platform: "Windows, macOS, and Linux",
+    status: "Coming Soon to Steam",
+    icon: "./assets/tiny-keeps-icon.png",
+    url: "./tiny-keeps/",
+    supportUrl: "./tiny-keeps/support.html",
+    privacyUrl: "./tiny-keeps/privacy.html",
+    stores: [
+      {
+        name: "Steam",
+        url: "",
+      },
+    ],
+    description:
+      "A survivor-like roguelite. You are a button lost in a drawer: arm yourself with paperclips, thumbtacks and coins, and hold out against waves of dust and crumbs until the boss falls. Coming Soon to Steam.",
+  },
 ];

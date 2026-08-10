@@ -15,6 +15,9 @@ Static website for `buksaetong.com`.
 - `/HAGOPAStudio/sand-caravan/` - Sand Caravan product page
 - `/HAGOPAStudio/sand-caravan/privacy.html` - Sand Caravan privacy policy
 - `/HAGOPAStudio/sand-caravan/support.html` - Sand Caravan support page
+- `/HAGOPAStudio/tiny-keeps/` - Tiny Keeps product page (PC / Steam)
+- `/HAGOPAStudio/tiny-keeps/privacy.html` - Tiny Keeps privacy policy
+- `/HAGOPAStudio/tiny-keeps/support.html` - Tiny Keeps support page
 
 ## Game Catalog
 
@@ -32,6 +35,9 @@ privacy, and support pages, so the game section can grow without rewriting the s
 - Mooncrop Support: `https://buksaetong.com/HAGOPAStudio/mooncrop/support.html`
 - Sand Caravan Privacy Policy: `https://buksaetong.com/HAGOPAStudio/sand-caravan/privacy.html`
 - Sand Caravan Support: `https://buksaetong.com/HAGOPAStudio/sand-caravan/support.html`
+- Tiny Keeps Product Page: `https://buksaetong.com/HAGOPAStudio/tiny-keeps/`
+- Tiny Keeps Privacy Policy: `https://buksaetong.com/HAGOPAStudio/tiny-keeps/privacy.html`
+- Tiny Keeps Support: `https://buksaetong.com/HAGOPAStudio/tiny-keeps/support.html`
 
 ## Deployment Notes
 
