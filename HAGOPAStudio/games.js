@@ -4,7 +4,7 @@ window.hagopaGames = [
     title: "Guild's Requiem",
     genre: "Dark Fantasy Deckbuilding Roguelike",
     platform: "Windows, macOS, and Linux",
-    status: "Coming Soon to Steam",
+    status: "Available Now on Steam",
     icon: "./assets/guilds-requiem-icon.png",
     url: "./guilds-requiem/",
     supportUrl: "./guilds-requiem/support.html",
@@ -16,37 +16,14 @@ window.hagopaGames = [
       },
     ],
     description:
-      "A dark fantasy deckbuilding roguelike. Run a guild at the edge of a dying world, send your party into the abyss, and win tactical card battles where every fallen light brings the end closer. Coming Soon to Steam.",
-  },
-  {
-    slug: "mooncrop",
-    title: "Mooncrop",
-    genre: "Mobile Game",
-    platform: "iOS and Android",
-    status: "Coming July 2026",
-    icon: "./assets/mooncrop-icon.png",
-    url: "./mooncrop/",
-    supportUrl: "./mooncrop/support.html",
-    privacyUrl: "./mooncrop/privacy.html",
-    stores: [
-      {
-        name: "Google Play",
-        url: "",
-      },
-      {
-        name: "App Store",
-        url: "",
-      },
-    ],
-    description:
-      "A HAGOPA Studio mobile game coming July 2026 to Google Play and the App Store.",
+      "A dark fantasy deckbuilding roguelike. Run a guild at the edge of a dying world, send your party into the abyss, and win tactical card battles where every fallen light brings the end closer. Available now on Steam.",
   },
   {
     slug: "sand-caravan",
     title: "Sand Caravan",
     genre: "Idle RPG",
-    platform: "iOS and Android",
-    status: "Coming July 2026",
+    platform: "iOS",
+    status: "Available Now on the App Store",
     icon: "./assets/sand-caravan-icon.png",
     hero: "./assets/sand-caravan-hero.png",
     url: "./sand-caravan/",
@@ -54,16 +31,12 @@ window.hagopaGames = [
     privacyUrl: "./sand-caravan/privacy.html",
     stores: [
       {
-        name: "Google Play",
-        url: "",
-      },
-      {
         name: "App Store",
         url: "",
       },
     ],
     description:
-      "A mobile idle RPG about a caravan crossing desert ruins, gathering relics, hiring allies, and surviving deeper expeditions. Coming July 2026.",
+      "A mobile idle RPG about a caravan crossing desert ruins, gathering relics, hiring allies, and surviving deeper expeditions. Available now on the App Store.",
   },
   {
     slug: "star-swarm-idle",

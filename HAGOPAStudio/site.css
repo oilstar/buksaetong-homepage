@@ -472,13 +472,6 @@ h3 {
   font-size: 44px;
 }
 
-.game-mark.mooncrop,
-.product-mark.mooncrop {
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0)),
-    linear-gradient(135deg, #315c72, #6f8d4e 52%, #c28f45);
-}
-
 .game-card p {
   margin: 10px 0 0;
   color: var(--muted);
