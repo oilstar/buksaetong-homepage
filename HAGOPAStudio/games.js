@@ -62,15 +62,15 @@ window.hagopaGames = [
       "A mobile idle drone-swarm shooter: build an autonomous fleet, push through vertical bullet routes, and break giant bosses with smart formation and research choices.",
   },
   {
-    slug: "tiny-keeps",
-    title: "Tiny Keeps",
+    slug: "button-down",
+    title: "Button Down",
     genre: "Survivor-like Roguelite",
     platform: "Windows, macOS, and Linux",
     status: "Coming Soon to Steam",
-    icon: "./assets/tiny-keeps-icon.png",
-    url: "./tiny-keeps/",
-    supportUrl: "./tiny-keeps/support.html",
-    privacyUrl: "./tiny-keeps/privacy.html",
+    icon: "./assets/button-down-icon.png",
+    url: "./button-down/",
+    supportUrl: "./button-down/support.html",
+    privacyUrl: "./button-down/privacy.html",
     stores: [
       {
         name: "Steam",
