@@ -44,6 +44,9 @@ privacy, and support pages, so the game section can grow without rewriting the s
 - Button Down Marketing (iOS): `https://buksaetong.com/HAGOPAStudio/button-down/ios.html`
 - Button Down Support (iOS): `https://buksaetong.com/HAGOPAStudio/button-down/support-ios.html`
 - Button Down Privacy Policy (iOS): `https://buksaetong.com/HAGOPAStudio/button-down/privacy-ios.html`
+- Torchline Product Page (PC / Steam): `https://buksaetong.com/HAGOPAStudio/torchline/steam.html`
+- Torchline Privacy Policy (PC / Steam): `https://buksaetong.com/HAGOPAStudio/torchline/privacy.html`
+- Torchline Support (PC / Steam): `https://buksaetong.com/HAGOPAStudio/torchline/support-steam.html`
 - Torchline Marketing (iOS): `https://buksaetong.com/HAGOPAStudio/torchline/`
 - Torchline Support (iOS): `https://buksaetong.com/HAGOPAStudio/torchline/support.html`
 - Torchline Privacy Policy (iOS): `https://buksaetong.com/HAGOPAStudio/torchline/privacy-ios.html`

@@ -65,8 +65,8 @@ window.hagopaGames = [
     slug: "button-down",
     title: "Button Down",
     genre: "Survivor-like Roguelite",
-    platform: "Windows, macOS, and Linux",
-    status: "Coming Soon to Steam",
+    platform: "Windows, macOS, Linux, and iPhone",
+    status: "Steam and App Store",
     icon: "./assets/button-down-icon.png",
     url: "./button-down/",
     supportUrl: "./button-down/support.html",
@@ -76,8 +76,35 @@ window.hagopaGames = [
         name: "Steam",
         url: "",
       },
+      {
+        name: "App Store",
+        url: "./button-down/ios.html",
+      },
     ],
     description:
-      "A survivor-like roguelite. You are a button lost in a drawer: arm yourself with paperclips, thumbtacks and coins, and hold out against waves of dust and crumbs until the boss falls. Coming Soon to Steam.",
+      "A survivor-like roguelite. You are a button lost in a drawer: arm yourself with paperclips, thumbtacks and coins, and hold out against waves of dust and crumbs until the boss falls. On Steam for PC and on the App Store for iPhone.",
+  },
+  {
+    slug: "torchline",
+    title: "Torchline",
+    genre: "Turn-based Party RPG",
+    platform: "Windows, macOS, Linux, and iPhone",
+    status: "Coming Soon",
+    icon: "./assets/torchline-icon.png",
+    url: "./torchline/steam.html",
+    supportUrl: "./torchline/support-steam.html",
+    privacyUrl: "./torchline/privacy.html",
+    stores: [
+      {
+        name: "Steam",
+        url: "",
+      },
+      {
+        name: "App Store",
+        url: "./torchline/",
+      },
+    ],
+    description:
+      "A turn-based party RPG. The sun has fallen asleep, and Erin sets out with a single torch to wake it. Lead a party of four in a four-slot formation, where who holds the torch changes every fight. Coming to Steam for PC and the App Store for iPhone.",
   },
 ];
