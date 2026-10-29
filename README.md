@@ -39,6 +39,12 @@ privacy, and support pages, so the game section can grow without rewriting the s
 - Button Down Privacy Policy: `https://buksaetong.com/HAGOPAStudio/button-down/privacy.html`
 - Button Down Support: `https://buksaetong.com/HAGOPAStudio/button-down/support.html`
 
+## App Store URLs
+
+- Button Down Marketing (iOS): `https://buksaetong.com/HAGOPAStudio/button-down/ios.html`
+- Button Down Support (iOS): `https://buksaetong.com/HAGOPAStudio/button-down/support-ios.html`
+- Button Down Privacy Policy (iOS): `https://buksaetong.com/HAGOPAStudio/button-down/privacy-ios.html`
+
 ## Deployment Notes
 
 This site is deployed with GitHub Pages from the `main` branch root.
