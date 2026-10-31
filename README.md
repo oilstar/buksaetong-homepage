@@ -50,6 +50,9 @@ privacy, and support pages, so the game section can grow without rewriting the s
 - Torchline Marketing (iOS): `https://buksaetong.com/HAGOPAStudio/torchline/`
 - Torchline Support (iOS): `https://buksaetong.com/HAGOPAStudio/torchline/support.html`
 - Torchline Privacy Policy (iOS): `https://buksaetong.com/HAGOPAStudio/torchline/privacy-ios.html`
+- Torchline Product Page (Android / Google Play website): `https://buksaetong.com/HAGOPAStudio/torchline/android.html`
+- Torchline Support (Android): `https://buksaetong.com/HAGOPAStudio/torchline/support-android.html`
+- Torchline Privacy Policy (Android): `https://buksaetong.com/HAGOPAStudio/torchline/privacy-android.html`
 
 ## Deployment Notes
 

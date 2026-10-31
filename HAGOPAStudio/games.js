@@ -65,7 +65,7 @@ window.hagopaGames = [
     slug: "button-down",
     title: "Button Down",
     genre: "Survivor-like Roguelite",
-    platform: "Windows, macOS, Linux, and iPhone",
+    platform: "Windows, macOS, Linux, iPhone, and Android",
     status: "Steam and App Store",
     icon: "./assets/button-down-icon.png",
     url: "./button-down/",
@@ -88,7 +88,7 @@ window.hagopaGames = [
     slug: "torchline",
     title: "Torchline",
     genre: "Turn-based Party RPG",
-    platform: "Windows, macOS, Linux, and iPhone",
+    platform: "Windows, macOS, Linux, iPhone, and Android",
     status: "Coming Soon",
     icon: "./assets/torchline-icon.png",
     url: "./torchline/steam.html",
@@ -103,8 +103,12 @@ window.hagopaGames = [
         name: "App Store",
         url: "./torchline/",
       },
+      {
+        name: "Google Play",
+        url: "./torchline/android.html",
+      },
     ],
     description:
-      "A turn-based party RPG. The sun has fallen asleep, and Erin sets out with a single torch to wake it. Lead a party of four in a four-slot formation, where who holds the torch changes every fight. Coming to Steam for PC and the App Store for iPhone.",
+      "A turn-based party RPG. The sun has fallen asleep, and Erin sets out with a single torch to wake it. Lead a party of four in a four-slot formation, where who holds the torch changes every fight. Coming to Steam for PC, the App Store for iPhone, and Google Play for Android.",
   },
 ];
